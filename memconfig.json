@@ -1,0 +1,54 @@
+{
+  "schema": {
+    "types": [
+      {
+        "name": "Root",
+        "actions": [
+          {
+            "name": "explain",
+            "type": "String",
+            "params": [
+              {
+                "name": "text",
+                "type": "String"
+              }
+            ]
+          },
+          {
+            "name": "grammar",
+            "type": "String",
+            "params": [
+              {
+                "name": "text",
+                "type": "String"
+              }
+            ]
+          },
+          {
+            "name": "summarize",
+            "type": "String",
+            "params": [
+              {
+                "name": "text",
+                "type": "String"
+              }
+            ]
+          },
+          {
+            "name": "sentimentAnalysis",
+            "type": "String",
+            "params": [
+              {
+                "name": "text",
+                "type": "String"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "dependencies": {
+    "models": "openai:models"
+  }
+}
