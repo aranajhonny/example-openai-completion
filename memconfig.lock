@@ -31,8 +31,7 @@
               {
                 "name": "generateImage",
                 "description": "",
-                "type": "List",
-                "ofType": "Image",
+                "type": "Json",
                 "params": [
                   {
                     "name": "prompt",
@@ -142,6 +141,13 @@
                 "name": "files",
                 "description": "",
                 "type": "FilesCollection",
+                "params": [],
+                "hints": {}
+              },
+              {
+                "name": "tests",
+                "description": "",
+                "type": "Tests",
                 "params": [],
                 "hints": {}
               },
@@ -525,7 +531,7 @@
               {
                 "name": "createEmbeddings",
                 "description": "",
-                "type": "String",
+                "type": "Json",
                 "params": [
                   {
                     "name": "input",
@@ -536,7 +542,7 @@
                   {
                     "name": "inputs",
                     "description": "",
-                    "type": "String",
+                    "type": "Json",
                     "optional": true
                   },
                   {
@@ -1042,6 +1048,30 @@
                 "description": "A reference to this node",
                 "type": "Ref",
                 "ofType": "File",
+                "params": [],
+                "hints": {}
+              }
+            ],
+            "events": []
+          },
+          {
+            "name": "Tests",
+            "description": "",
+            "actions": [
+              {
+                "name": "testGetModels",
+                "description": "",
+                "type": "Void",
+                "params": [],
+                "hints": {}
+              }
+            ],
+            "fields": [
+              {
+                "name": "gref",
+                "description": "A reference to this node",
+                "type": "Ref",
+                "ofType": "Tests",
                 "params": [],
                 "hints": {}
               }
